@@ -1,0 +1,13 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    editing
+{% endblock %}
+
+{% block body %}
+<form action="/edit">
+<input type="text" name="t" value="{{title}}"><br>
+<textarea rows="60" cols="60" name="c">{{content}}</textarea>
+<input type="submit" name=>
+</form>
+{% endblock %}
